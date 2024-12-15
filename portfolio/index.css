@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #f48e8e; /* Цвет фона шапки */
+  color: #ffffff; /* Цвет текста */
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для шапки */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Размер заголовка */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px; /* Отступы между пунктами меню */
+}
+
+nav ul li a {
+  color: #ffffff; /* Цвет ссылок */
+  text-decoration: none;
+  font-weight: bold; /* Жирный шрифт */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px; /* Отступы между секциями */
+}
+
+section h2 {
+  font-size: 2em; /* Размер заголовков секций */
+  color: #333; /* Цвет заголовков секций */
+}
+
+#about img {
+  width: 150px; /* Уменьшенный размер изображения в секции "О себе" */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  border-radius: 50%; /* Круглая форма изображения */
+  margin-bottom: 20px; /* Отступ снизу от изображения */
+}
+
+.gallery {
+  display: flex; /* Используем flexbox для размещения изображений в ряд */
+  flex-wrap: wrap; /* Перенос изображений на новую строку при нехватке места */
+  gap: 10px; /* Отступы между изображениями */
+}
+
+.gallery div {
+  flex: 2; /* Каждый элемент занимает равное пространство */
+  max-width: 1700px; /* Максимальная ширина изображений */
+}
+
+.gallery img {
+  width: 100%; /* Ширина изображения занимает всю ширину родительского элемента */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  border-radius: 5px; /* Скругление углов изображений */
+}
+
+.text p {
+  margin-bottom: 10px; /* Отступ снизу от текста */
+}
+
+footer {
+  background-color: #f9a4a4; /* Цвет фона подвала */
+  color: #ffffff; /* Цвет текста подвала */
+  text-align: center;
+  padding: 50px 0;
+}

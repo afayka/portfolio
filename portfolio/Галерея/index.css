@@ -1,0 +1,48 @@
+
+
+/* Стили для body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #e2af58;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Стили для основного контейнера галереи */
+main {
+    padding: 20px;
+}
+
+/* Стили для галереи */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    gap: 15px; /* Расстояние между элементами */
+}
+
+/* Стили для каждого элемента галереи */
+.gallery div {
+    overflow: hidden; /* Скрыть части изображения, выходящие за пределы контейнера */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень под элементами */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+.gallery div:hover {
+    transform: scale(1.05); /* Увеличение элемента при наведении */
+}
+
+/* Стили для изображений */
+.gallery img {
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    display: block; /* Убираем пробелы под изображением */
+}
